@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recipe Finder</title>
+  <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,7 +14,9 @@
     <p>Search for delicious recipes by ingredient</p>
     <input type="text" id="search-input" placeholder="Enter an ingredient..." />
     <button onclick="searchRecipes()">Search</button>
-    <div id="results"></div>
+   <button onclick="getRandomRecipe()">🎲 Random Recipe</button>
+<div id="results"></div>
+<div id="loading" style="display: none;">Loading...</div>
   </div>
 
   <script src="script.js"></script>
