@@ -1,25 +1,29 @@
-#  Recipe Finder Website
+#  # 🍲 Recipe Finder Website  
 
-A simple web app that allows users to search for recipes by ingredient.  
-Built with **HTML, CSS, and JavaScript** using [TheMealDB API](https://www.themealdb.com/api.php).
+A simple and fun web app that helps you discover new meals from around the world.  
+Search by ingredient, get a random recipe, and explore full cooking details.  
 
----
-
-##  Features
--  Search for recipes by ingredient (e.g., "chicken", "rice", "egg").
--  Display meal images and names.
--  View full recipe details via link.
--  Fast & lightweight (no frameworks needed).
--  Responsive design for desktop & mobile.
+Built with **HTML, CSS, and JavaScript** using the [TheMealDB API](https://www.themealdb.com/api.php).  
 
 ---
 
-## Technologies Used
-- **HTML5**
-- **CSS3 (Grid, Flexbox)**
-- **Vanilla JavaScript (Fetch API)**
-- **TheMealDB API**
+## ✨ Features  
+- 🔍 Search for recipes by ingredient (e.g., "chicken", "rice", "egg").  
+- 🖼️ Display meal images, names, and quick details.  
+- 📖 View full recipe instructions with links.  
+- 🎲 Random Recipe button for surprise meals.  
+- 🌙 Dark Mode toggle (switch between light & dark themes).  
+- 📱 Responsive design for desktop & mobile.  
+- ℹ️ About section to learn more about the project.  
 
 ---
 
-## Project Structure
+## 🛠️ Technologies Used  
+- **HTML5**  
+- **CSS3 (Flexbox, Grid, Responsive Design)**  
+- **Vanilla JavaScript (Fetch API, DOM Manipulation)**  
+- **TheMealDB API**  
+
+---
+
+## 📂 Project Structure  

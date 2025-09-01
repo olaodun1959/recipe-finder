@@ -4,20 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recipe Finder</title>
-  <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">🍲 Recipe Finder</div>
+    <nav class="nav">
+      
+      <a href="about.html">About</a>
+
+    </nav>
+
+    <!-- Dark Mode Toggle Switch -->
+    <div class="toggle-switch">
+      <input type="checkbox" id="darkModeToggle">
+      <label for="darkModeToggle"></label>
+    </div>
+  </header>
+
+  <!-- Main Container -->
   <div class="container">
     <h1>🍲 Recipe Finder</h1>
     <p>Search for delicious recipes by ingredient</p>
     <input type="text" id="search-input" placeholder="Enter an ingredient..." />
     <button onclick="searchRecipes()">Search</button>
-   <button onclick="getRandomRecipe()">🎲 Random Recipe</button>
-<div id="results"></div>
-<div id="loading" style="display: none;">Loading...</div>
+    <button onclick="getRandomRecipe()">🎲 Random Recipe</button>
+    <div id="results"></div>
+    <div id="loading" style="display: none;">Loading...</div>
   </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Made with ❤️ by Timileyin</p>
+    <p>
+      <a href="https://github.com/YOUR-USERNAME/recipe-finder" target="_blank">
+        View on GitHub
+      </a>
+    </p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

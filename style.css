@@ -5,16 +5,28 @@
     margin: 5px 0;
   }
 }
-
 body {
   font-family: Arial, sans-serif;
-  background: #fdfdfd;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
+
+  /* Wallpaper background */
+  background: url("images/wallpaper.png") no-repeat center center fixed;
+  background-size: cover;
+   /* Wallpaper background with dark overlay */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* dark overlay */
+    url("images/wallpaper.png") no-repeat center center fixed;
+  background-size: cover;
+
+
+  color: #E07B39;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -26,13 +38,13 @@ body {
 
 /* Title */
 h1 {
-  color: #333;
+  color: #E07B39;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
 p {
-  color: #555;
+  color: #E07B39;
   margin-bottom: 1.5rem;
 }
 
@@ -134,4 +146,226 @@ body.dark-mode .card {
   background: #2a2a2a;
   border: 1px solid #444;
   color: #fff;
+}
+/* Switch container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+/* Hide default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider design */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 26px;
+}
+
+/* Circle */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px; width: 20px;
+  left: 3px; bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Checked state */
+input:checked + .slider {
+  background-color: #2196F3; /* blue accent */
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--header-bg);
+  color: var(--text-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Nav Links */
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  width: 50px;
+  height: 25px;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.toggle-switch label {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.toggle-switch label::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle-switch input:checked + label {
+  background: var(--accent-color);
+}
+
+.toggle-switch input:checked + label::after {
+  transform: translateX(25px);
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--footer-bg);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+/* Header */
+header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6347; /* tomato highlight */
+}
+
+nav .active {
+  color: #ff6347;
+}
+
+/* Dark Mode Header */
+body.dark-mode header {
+  background: rgba(20, 20, 20, 0.9);
+}
+
+body.dark-mode nav a {
+  color: #f1f1f1;
+}
+
+body.dark-mode nav a:hover {
+  color: #ff9800;
+}
+
+/* About Section */
+.about {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  padding-inline-start: 20px;
+}
+
+/* Dark Mode About */
+body.dark-mode .about {
+  background: rgba(34, 34, 34, 0.9);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+body.dark-mode footer {
+  background: rgba(20, 20, 20, 0.9);
 }

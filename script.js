@@ -31,7 +31,7 @@ function searchRecipes() {
         card.innerHTML = `
           <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
           <h3>${meal.strMeal}</h3>
-          <a href="https://www.themealdb.com/meal.php?c=${meal.idMeal}" target="_blank">
+          <a href="https://www.themealdb.com/meal.php?i=${meal.idMeal}" target="_blank">
             View Recipe
           </a>
         `;
